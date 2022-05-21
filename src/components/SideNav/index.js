@@ -7,11 +7,9 @@ import { useMedia } from 'react-use'
 import { transparentize } from 'polished'
 import { TYPE } from '../../Theme'
 import { withRouter } from 'react-router-dom'
-import { TrendingUp, List, PieChart, Disc } from 'react-feather'
+import { TrendingUp, PieChart, Disc } from 'react-feather'
 import Link from '../Link'
 import { useSessionStart } from '../../contexts/Application'
-import { useDarkModeManager } from '../../contexts/LocalStorage'
-import Toggle from '../Toggle'
 
 const Wrapper = styled.div`
   height: ${({ isMobile }) => (isMobile ? 'initial' : '100vh')};
@@ -105,8 +103,6 @@ function SideNav({ history }) {
   const below1180 = useMedia('(max-width: 1180px)')
 
   const seconds = useSessionStart()
-
-  const [isDark, toggleDarkMode] = useDarkModeManager()
 
   return (
     <Wrapper isMobile={below1080}>

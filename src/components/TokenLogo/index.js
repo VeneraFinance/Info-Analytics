@@ -71,22 +71,6 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     )
   }
 
-  const path = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${isAddress(
-    address
-  )}/logo.png`
-  /*
-  let defaultTokenList = ''
-
-  fetch('https://assets.spookyswap.finance/token-list/veneraswap.json',{mode: 'no-cors'})
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (myJson) {
-
-      defaultTokenList = myJson
-      console.log(defaultTokenList)
-    });*/
-
   const localpath = defaultTokenList.tokens.filter((a) => a.address === isAddress(address))
 
   return (
