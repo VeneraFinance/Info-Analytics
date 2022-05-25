@@ -4,7 +4,7 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.fura.org/subgraphs/name/spookyswap'
+    uri: 'https://api.thegraph.com/subgraphs/name/venerafinance/venera'
     ,
   }),
   cache: new InMemoryCache(),
@@ -13,7 +13,7 @@ export const client = new ApolloClient({
 
 export const healthClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.fura.org/subgraphs/name/spookyswap',
+    uri: 'https://api.bscgraph.org/graphql',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -29,7 +29,7 @@ export const stakingClient = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.fura.org/subgraphs/name/spookyswap',
+    uri: 'https://api.bscgraph.org/subgraphs/name/bsc-blocks',
   }),
   cache: new InMemoryCache(),
 })

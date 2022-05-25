@@ -39,10 +39,10 @@ export function getTimeframe(timeWindow) {
 /*
 +
       (remove ? `remove` : `add`) +
-      `/${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'ETH' : token0Address}/${'ETH'}`
+      `/${token0Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'ETH' : token0Address}/${'ETH'}`
        +
       (remove ? `remove` : `add`) +
-      `/${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'ETH' : token0Address}/${token1Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'ETH' : token1Address
+      `/${token0Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'ETH' : token0Address}/${token1Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'ETH' : token1Address
       }`
       */
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
@@ -50,30 +50,30 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     return (
       `https://veneraswap.com/#/` +
       (remove ? `remove` : `add`) +
-      `/${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}/${'FTM'}`
+      `/${token0Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'FTM' : token0Address}/${'FTM'}`
     )
 
   } else {
     return (
       `https://veneraswap.com/#/` +
       (remove ? `remove` : `add`) +
-      `/${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}/` +
-      `${token1Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token1Address}`
+      `/${token0Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'FTM' : token0Address}/` +
+      `${token1Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'FTM' : token1Address}`
     )
   }
 }
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://veneraswap.com/#/swap?outputCurrency=${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address}`
+    return `https://veneraswap.com/#/swap?outputCurrency=${token0Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'FTM' : token0Address}`
   } else {
-    return `https://veneraswap.com/#/swap?inputCurrency=${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token0Address
-      }&outputCurrency=${token1Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'FTM' : token1Address}`
+    return `https://veneraswap.com/#/swap?inputCurrency=${token0Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'FTM' : token0Address
+      }&outputCurrency=${token1Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'FTM' : token1Address}`
   }
 }
 /*
-?inputCurrency=${token0Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'ETH' : token0Address
-      }&outputCurrency=${token1Address === '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83' ? 'ETH' : token1Address}`
+?inputCurrency=${token0Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'ETH' : token0Address
+      }&outputCurrency=${token1Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'ETH' : token1Address}`
       */
 
 export function getMiningPoolLink(token0Address) {
