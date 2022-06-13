@@ -29,7 +29,7 @@ export const stakingClient = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.bscgraph.org/subgraphs/name/bsc-blocks',
+    uri: 'https://api.thegraph.com/subgraphs/name/matthewlilley/bsc-blocks',
   }),
   cache: new InMemoryCache(),
 })
