@@ -11,9 +11,9 @@
   "keywords": ["pancake", "default"],
   "tokens": [
     {
-      "name": "VENERA Swap",
+      "name": "VENERA",
       "symbol": "VSW",
-      "address": "0x64c5bFAE6f4B597F82b6ae6Adc033f743241840B",
+      "address": "0x94174f59c009f49b6aBC362706fdA402616b0427",
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.veneraswap.com/images/coins/0x64c5bFAE6f4B597F82b6ae6Adc033f743241840B.png"
